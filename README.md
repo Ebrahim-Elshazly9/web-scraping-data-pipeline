@@ -16,8 +16,7 @@ This project demonstrates a complete ETL pipeline built with:
 * Microsoft Power BI (Data Visualization)
 * Docker (Containerized Environment)
 
-![Data Architecture](assets/Data Engineering Architicture.png)
-
+![Data Architecture](assets/Data_Engineering_Architecture.png)
 ---
 
 ## Architecture
