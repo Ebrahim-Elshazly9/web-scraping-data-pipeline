@@ -1,0 +1,29 @@
+[2026-04-25T14:38:15.074+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-04-25T14:38:15.172+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: jobs_analytics.extract scheduled__2026-04-24T00:00:00+00:00 [queued]>
+[2026-04-25T14:38:15.212+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: jobs_analytics.extract scheduled__2026-04-24T00:00:00+00:00 [queued]>
+[2026-04-25T14:38:15.221+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-04-25T14:38:15.276+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): extract> on 2026-04-24 00:00:00+00:00
+[2026-04-25T14:38:15.309+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1290) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-04-25T14:38:15.323+0000] {standard_task_runner.py:72} INFO - Started process 1294 to run task
+[2026-04-25T14:38:15.328+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'jobs_analytics', 'extract', 'scheduled__2026-04-24T00:00:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/job_analysis.py', '--cfg-path', '/tmp/tmpqhooxip_']
+[2026-04-25T14:38:15.348+0000] {standard_task_runner.py:105} INFO - Job 22: Subtask extract
+[2026-04-25T14:38:15.606+0000] {task_command.py:467} INFO - Running <TaskInstance: jobs_analytics.extract scheduled__2026-04-24T00:00:00+00:00 [running]> on host e9014596f7a8
+[2026-04-25T14:38:16.025+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='jobs_analytics' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2026-04-24T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-24T00:00:00+00:00'
+[2026-04-25T14:38:16.031+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-04-25T14:38:16.032+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-04-25T14:38:16.033+0000] {logging_mixin.py:190} INFO - Current task name:extract state:running start_date:2026-04-25 14:38:15.175579+00:00
+[2026-04-25T14:38:16.034+0000] {logging_mixin.py:190} INFO - Dag name:jobs_analytics and current dag run status:running
+[2026-04-25T14:38:16.036+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-04-25T14:38:16.072+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2026-04-25T14:38:16.085+0000] {python.py:240} INFO - Done. Returned value was: [('Senior Data Engineer', 'GB Corp -', 'Giza, Egypt'), ('Middle Data Engineer', 'Vertex Technologies  -', 'Cairo, Egypt'), ('Senior Data Engineer', 'Vertex Technologies  -', 'Cairo, Egypt'), ('Data Engineer', 'Hyundai Rotem -', 'Cairo, Egypt'), ('Data Center Engineer (Compute, Storage & Data Protection)', 'Confidential -', 'New Capital, Cairo, Egypt'), ('Infrastructure Network Operations Engineer (Data Center & WAN)', 'Confidential -', 'New Capital, Cairo, Egypt'), ('Quality Control Engineer', 'Abou Seif Group  -', 'Obour City, Cairo, Egypt'), ('Cost Control Engineer', 'MFO for contracting -', 'Mohandessin, Giza, Egypt'), ('Planning Engineer', 'green river for urban development -', 'New Capital, Cairo, Egypt'), ('QS Engineer', 'Concrete Plus -', 'Cairo, Egypt'), ('Business Intelligence Engineer - SQL / PYTHON', 'RISEUP (Endemag for Administrative Skills Development) -', 'Maadi, Cairo, Egypt'), ('Senior Electrical Procurement Engineer', 'Concrete Plus -', 'New Cairo, Cairo, Egypt'), ('Production Engineer', 'El Rashidi El Mizan -', '6th of October, Giza, Egypt'), ('Senior Storage & Backup Engineer', 'Anzemah -', 'Giza, Egypt'), ('Senior Security Engineer / Security Team Lead', 'Anzemah -', 'Giza, Egypt')]
+[2026-04-25T14:38:16.157+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-04-25T14:38:16.158+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=jobs_analytics, task_id=extract, run_id=scheduled__2026-04-24T00:00:00+00:00, execution_date=20260424T000000, start_date=20260425T143815, end_date=20260425T143816
+[2026-04-25T14:38:16.183+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-04-25T14:38:16.185+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-04-25T14:38:16.194+0000] {logging_mixin.py:190} INFO - Dag name:jobs_analytics queued_at:2026-04-25 14:38:10.540079+00:00
+[2026-04-25T14:38:16.197+0000] {logging_mixin.py:190} INFO - Task hostname:e9014596f7a8 operator:_PythonDecoratedOperator
+[2026-04-25T14:38:16.244+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-04-25T14:38:16.313+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-04-25T14:38:16.321+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
